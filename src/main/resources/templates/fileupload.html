@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>ファイルアップロードテスト</title>
+</head>
+<body>
+
+<div th:id="flash-message" th:if="${message}" th:text="${message}"></div>
+
+
+<form name="form_file_upload" action="fileUpload" enctype="multipart/form-data" method="POST">
+    <input type="file" id="file" name="file" /><BR>
+    <button type="submit">アップロード</button>
+</form>
+</body>
+</html>
